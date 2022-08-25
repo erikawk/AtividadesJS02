@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+
+<body>
+    <script>
+
+        var salario = Number.parseFloat(prompt("Informe seu salário: "));
+        if (salario <= 280) {
+            alert("Salário antes do reajuste: " + salario + "\nPercentual do aumento aplicado: 20%" + "\nValor do aumento: " + (20 * salario / 100) + "\nNovo salário: " + (salario + (salario * 20 / 100)));
+        } else if (salario > 280 && salario <= 700) {
+            alert("Salário antes do reajuste: " + salario + "\nPercentual do aumento aplicado: 15%" + "\nValor do aumento: " + (15 * salario / 100) + "\nNovo salário: " + (salario + (salario * 15 / 100)));
+        } else if (salario < 700 && salario <= 1500) {
+            alert("Salário antes do reajuste: " + salario + "\nPercentual do aumento aplicado: 20%" + "\nValor do aumento: " + (10 * salario / 100) + "\nNovo salário: " + (salario + (salario * 10 / 100)));
+        } else if (salario > 1500) {
+            alert("Salário antes do reajuste: " + salario + "\nPercentual do aumento aplicado: 20%" + "\nValor do aumento: " + (5 * salario / 100) + "\nNovo salário: " + (salario + (salario * 5 / 100)));
+        }
+
+    </script>
+</body>
+
+</html>
